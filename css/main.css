@@ -1,0 +1,267 @@
+/*
+	Search box
+*/
+div.search{
+	margin:10px 0 0;
+	min-width:206px;
+	overflow: hidden;
+}
+div.search .form-search {
+	float: left;
+	margin: 0;
+}
+div.search button{
+	background:0 0;
+	border:0;
+	color:#BCBCC4;
+	margin:0;
+	padding:0;
+	position:absolute;
+	right:10px;
+	top:6px;
+}
+div.search button:hover{
+	color:#000;
+}
+div.search div.control-group{
+	position:relative;
+	text-align:right;
+}
+div.search input.search-query{
+	font-size:.9em;
+	padding-right:30px;
+	padding-left:10px;
+	width:150px;
+	-moz-transition:all .2s ease-in .2s;
+	-o-transition:all .2s ease-in .2s;
+	-webkit-transition:all .2s ease-in .2s;
+	transition:all .2s ease-in .2s
+}
+div.search input:focus{
+	width:180px;
+}
+
+/*
+	Menu View
+*/
+#menu-view {
+	background-color: #2E3539;
+	margin-bottom: 12px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 7px 12px;
+}
+#menu-view ul {
+	padding: 0;
+	margin: 0;
+}
+#menu-view ul li {
+	display: inline-block;
+	vertical-align: top;
+	width: auto;
+	margin-right: 10px;
+}
+#menu-view ul li a {
+	color: white;	
+}
+/*
+	Breadcumbs
+*/
+#forum-breadcumbs ul {
+	margin: 0;
+}
+#forum-breadcumbs ul li {
+	display: inline-block;
+	vertical-align: top;
+	width: auto;
+	list-style: none;
+}
+#forum-breadcumbs ul li i {
+	color: #C3C3C3;
+}
+#forum-breadcumbs ul li a {
+	font-size: 13px;
+}
+#forum-breadcumbs ul li a:hover {
+	text-decoration: none;
+}
+/*
+	Block Categories
+*/
+#forum-categories {
+	margin-top: 15px;
+}
+#forum-categories h2 {
+	font-size: 1.8em;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+.block-category {
+	margin-bottom: 15px;
+	clear: both;
+	border: 1px solid lightgray;
+	border-top: 0;
+}
+.block-category .header {
+	display: block;
+	background: #08c;
+	color: white;
+}
+.block-category .header {
+	margin: 0;
+}
+.header li > dl > dt,
+.header li > dl > dd {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 48px;
+}
+li > dl {
+	margin: 0;
+}
+li > dl .view-profile {
+	color: #AA0000 !important;
+}
+li > dl > dt,
+li > dl > dd {
+	display: inline-block;
+	vertical-align: middle;
+}
+li > dl > dt {
+	width: 50%;
+	padding-left: 10px;
+	font-weight: normal;
+}
+li > dl > dd {
+	font-size: 12px;
+}
+li > dl > dd dfn {
+	position: absolute;
+	top: -9999px;
+	color: transparent;
+}
+li > dl .topics,
+li > dl .posts {
+	width: 8%;
+	text-align: center;
+	margin-left: 0;
+}
+li > dl .lastpost {
+	width: 25%;
+}
+li > dl .lastpost span {
+	line-height: 15px;
+	display: block;
+}
+li > dl .lastpost span .view-post:hover {
+	text-decoration: none;
+}
+li > dl .lastpost span em {
+	font-style: normal;
+	font-size: 11px;
+}
+li > dl > dt a {
+	color: white;
+	font-weight: normal;
+}
+li > dl > dt a:hover {
+	color: white;
+}
+.rowlist {
+	margin: 0;
+}
+.rowlist li dl {
+	margin: 0;
+}
+.rowlist .row-forum {
+	border-bottom: 1px solid lightgray;
+	-moz-transition:all .2s linear;
+	-o-transition:all .2s linear;
+	-webkit-transition:all .2s linear;
+	transition:all .2s linear;
+	list-style: none;
+	line-height: 40px;
+}
+.rowlist .row-forum:hover {
+	background: #F2F2F2;
+}
+.rowlist .row-forum:last-child {
+	border-bottom: 0;
+}
+.rowlist .row-forum dl {
+	padding: 12px 0;
+}
+.rowlist .row-forum dt i,
+.rowlist .row-forum dt > span {
+	display: inline-block;
+	vertical-align: middle;
+	width: auto;
+}
+.rowlist  .row-forum dt > i {
+	font-size: 30px;
+	color: lightgray;
+	margin-right: 10px;
+}
+.rowlist .row-forum dt a {
+	font-weight: bold;
+	color: #777;
+}
+.list-forums .row-forum dt > span > a {
+	color: #333 !important;
+}
+/*
+	Forum view
+*/
+#forum-view {
+
+}
+.btn-forum {
+	color: white;
+	display: block;
+	margin-bottom: 10px;
+	height: 35px;
+}
+.btn-forum a {
+	background: #333333;
+	color: white;
+	margin-right: -4px;
+}
+.btn-forum a,
+.btn-forum span {
+	display: inline-block;
+	vertical-align: top;
+	width: auto;
+	padding: 8px;
+}
+.btn-forum a:hover {
+	text-decoration: none;
+	background: rgba(0,0,0,0.7);
+}
+.btn-forum > span{
+	background: #08C;
+	padding: 8px 10px;
+}
+.btn-forum i {
+	font-size: 18px;
+}
+.rowlist .row-forum dt > span > a {
+	color: #08c;
+}
+.rowlist .row-forum dt > span > span {
+	font-size: 12px;
+}
+.rowlist .row-forum dt > span > span i {
+	font-size: 11px;
+}
+.rowlist .row-forum dt > span > span em {
+	font-style: normal;
+}
+
+
+/*
+	Topic view
+*/
+.post-reply i {
+	font-size: 15px;
+}
