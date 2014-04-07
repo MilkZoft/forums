@@ -270,7 +270,9 @@ li > dl > dd dfn {
 	color: transparent;
 }
 li > dl .topics,
-li > dl .posts {
+li > dl .posts,
+li > dl .answers,
+li > dl .visits  {
 	width: 8%;
 	text-align: center;
 	margin-left: 0;
@@ -336,11 +338,25 @@ li > dl > dt a:hover {
 .list-forums .row-forum dt > span > a {
 	color: #333 !important;
 }
+
 /*
 	Forum view
 */
 #forum-view {
 
+}
+.block-forum {
+	margin-bottom: 15px;
+	clear: both;
+	border-top: 0;
+}
+.block-forum .header {
+	display: block;
+	background: #08c;
+	color: white;
+}
+.block-forum .header {
+	margin: 0;
 }
 .rowlist .row-forum dt > span > a {
 	color: #08c;
@@ -354,7 +370,6 @@ li > dl > dt a:hover {
 .rowlist .row-forum dt > span > span em {
 	font-style: normal;
 }
-
 
 /*
 	Topic view
@@ -414,8 +429,8 @@ li > dl > dt a:hover {
 	display: block;
 }
 .profile-post dt img {
-	max-width: 80px;
-	max-height: 80px;
+	max-width: 100%;
+	max-height: 100%;
 	height: auto;
 	vertical-align: middle;
 	border: 0;
@@ -442,4 +457,69 @@ li > dl > dt a:hover {
 }
 .body-post .content {
 	padding-top: 12px;
+}
+
+
+/* 
+	RWD
+*/
+@media (min-width:980px) and (max-width:1200px) {
+	li > dl > dt {
+		width: 50%;
+	}
+	
+}
+
+@media (max-width:979px) {
+	li > dl > dt {
+		width: 65%;
+	}
+	
+	li > dl .topics,
+	li > dl .posts,
+	li > dl .answers,
+	li > dl .visits {
+		display: none !important;
+	}
+}
+
+@media (max-width:560px) {
+	.profile-post dt a:first-child {
+		max-width: 65px;
+		max-height: 65px;
+	}
+}
+
+@media (max-width:480px) {
+	li > dl .lastpost {
+		display: none !important;
+	}
+	
+	li > dl .topics,
+	li > dl .answers {
+		display: inline-block !important;
+		width: 30%;
+	}
+	.profile-post dd {
+		font-size: 11px;
+	}
+	.profile-post {
+		font-size: 11px;
+	}
+	.profile-post dd:last-child {
+		display: none;
+	}
+	.post .body-post {
+		width: 70%;
+	}
+}
+
+@media (max-width:320px) {
+	li > dl > dt {
+		width: 60%;
+	}
+	li > dl .topics,
+	li > dl .answers {
+		width: 25%;
+	}
 }
