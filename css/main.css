@@ -47,6 +47,9 @@ div.search input:focus{
 /*
 	General classes
 */
+optgroup {
+	font-style: normal;
+}
 .view-profile {
 	color: #AA0000 !important;
 }
@@ -474,7 +477,7 @@ li > dl > dt a:hover {
 	li > dl > dt {
 		width: 65%;
 	}
-	
+
 	li > dl .topics,
 	li > dl .posts,
 	li > dl .answers,
@@ -511,6 +514,13 @@ li > dl > dt a:hover {
 	}
 	.post .body-post {
 		width: 70%;
+	}
+}
+@media (max-width:360px) {
+	.jumpto span {
+		float: none !important;
+		display: block !important;
+		text-align: center;
 	}
 }
 
